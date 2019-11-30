@@ -1,0 +1,74 @@
+.wrapper {
+  display: grid;
+  grid-template-areas: "post-1 post-1 post-1 post-1"  
+                       "post-2 post-3 post-3 ."  
+                       ". post-3 post-3 post-4"
+                       "post-5 post-5 post-5 post-5"
+                       ; 
+ 
+  margin: 10px;
+  
+}
+.post-1 {
+  grid-area: post-1;
+  background-color: #FFC90D;
+  height:  10vh;
+
+}
+.post-2 {           
+  grid-area: post-2;
+  background-color: #B5E51D;
+  height: 33vh;
+  width: 10vw;
+}
+.post-3 {
+  grid-area: post-3;
+  background-color: #B97A57;
+  width: 50vw;
+   height: 67.8vh;
+   margin-top:20px;
+   margin-left: 3px;
+}
+.post-4 {           
+  grid-area: post-4;
+  background-color: #880016;
+  margin-top:20px;
+  margin-left: 3px;
+  margin-bottom: 32px;
+  width: 23vw;
+  height: 30vh;
+  padding: 15px;
+}
+.post-5 {
+  grid-area: post-5;
+  background-color: #ED1B24;
+  height: 10vh;
+}
+
+h2{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+
+#damage{
+  padding-left: 25px;
+}
+img{
+  padding: 7px;
+}
+#a{
+  position: relative;
+  left: 80px;
+
+}
+#b{
+  position: relative;
+  left: 300px;
+}
+#c{
+  position: relative;
+  left: 525px;
+}
+
