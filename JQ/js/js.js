@@ -49,5 +49,22 @@ $(document).ready(function(){
 	    $( ".post-4" ).fadeIn( "fast" ); // плавно изменяя прозрачность отображаем последний элемент <div> в документе
 	  });
 	});
+	  $(`.btn-toggle`).click(function() {
+    $(`table tr:nth-child(2) td:first-child p`).toggle(1000);
+});
+$(`.btn-fadeToggle`).click(function() {
+    $(`table tr:nth-child(3) td:first-child p`).fadeToggle(1000);
+});
+$(`.btn-slideToggle`).click(function() {
+    $(`table tr:nth-child(4) td:first-child p`).slideToggle(1000);
+});
+$(`.btn-animate`).click(function() {
+    console.log(4);
+
+    $(`table tr:nth-child(5) td:first-child p`).animate({ fontSize: "2em" });
+});
+$(`.btn-hide`).click(function() {
+    $(`table tr:nth-child(6) td:first-child p`).hide(1000);
+});
 });
 
