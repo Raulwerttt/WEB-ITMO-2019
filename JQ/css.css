@@ -29,7 +29,7 @@
   grid-area: post-3;
   background-color: #87cefa;
   width: 100%;
-   height:20.8vh;
+   height:50vh;
    margin-top:20px;
    margin-left: 3px;
 }
@@ -50,4 +50,8 @@
 .hover{
 	text-align: center;
 	
+}
+.task3-table td,
+.task3-table th {
+    border: 2px solid #555555;
 }
