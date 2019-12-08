@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="text/javascript" src="js.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <style>
+            #Functions {
+                display: none;
+            }
+            #Functions div {
+                display: inline-block;
+                border: 1px solid #000;
+                border-radius: 5px;
+            }
+            #tableWrap table {
+                border-collapse: collapse;
+            }
+            #tableWrap td {
+                border: 2px solid #000;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="form">
+            <span>Count of columns</span>
+            <input type="number" id="Cols" min="0" />
+            <span>Count of rows</span>
+            <input type="number" id="Rows" min="0" />
+            <input type="button" value="Create" onclick="create()" />
+        </form>
+        <div id="Functions">
+            <h1>Functions</h1>
+            <div>
+                <p>Change border</p>
+                <form action="">
+                    <input id="chBS" type="number" min="0" max="999" value="2" oninput="changeBorderButton()" />
+                    <select name="" id="chBT" oninput="changeBorderButton()">
+                        <option value="solid">solid</option>
+                        <option value="dotted">dotted</option>
+                        <option value="dashed">dashed</option>
+                        <option value="double">double</option>
+                        <option value="groove">groove</option>
+                        <option value="rige">rige</option>
+                        <option value="inset">inset</option>
+                        <option value="outset">outset</option>
+                    </select>
+                    <input id="chS" type="button" value="Set 2px solid" onclick="setBorder();" />
+                </form>
+            </div>
+            <div>
+                <p>Add Title</p>
+                <form action="">
+                    <input id="title" type="textarea" />
+                    <input type="button" value="add" onclick="addTitle();" />
+                </form>
+            </div>
+            <div>
+                <p>Remove row</p>
+                <form action="">
+                    <input id="rmTr" type="number" min="0" />
+                    <input type="button" value="remove" onclick="removeTr();" />
+                </form>
+            </div>
+            <div>
+                <p>Random chose</p>
+                <button onclick="makeMagic();">Magic</button>
+            </div>
+            <div>
+                <p>Remove table</p>
+                <button onclick="removeTable();">remove</button>
+            </div>
+        </div>
+        <div id="tableWrap"></div>
+    </body>
+</html>
