@@ -18,7 +18,7 @@
             tableWrap.innerHTML = tableCode;
         }
         function changeBorderButton() {
-            document.querySelector(`#chS`).value = `set ${document.getElementById(`chBS`).value}px ${document.getElementById(`chBT`).value}`;
+            document.querySelector(`#chS`).value = `set ${document.getElementById(`chBS`).value}ОЫ ${document.getElementById(`chBT`).value}`;
         }
         function setBorder() {
             let tds = document.querySelectorAll(`#tableWrap td`);
@@ -48,17 +48,12 @@
         function makeMagic() {
             let tds = document.querySelectorAll(`#tableWrap td`);
             let td = tds[Math.floor(Math.random() * tds.length)];
-            if (!tds.length) return;
-            if (Math.random() >= 0.5) {
+           
+            if (Math.random() >= 0.00000001) {
                 td.style.backgroundColor = randColor();
                 td.style.color = randColor();
-                td.style.fontSize = `${Math.floor(Math.random() * 10 + 15)}pt`;
-            } else {
-                let coords = td.id.split(`d`)[1];
-                let row = +coords.split(`,`)[0];
-                let col = +coords.split(`,`)[1];
-                td.innerHTML = `<form><input type="textarea" id="f${row},${col}"><input type="button" onclick="changedata(${row}, ${col})" value="Save"></form>`;
-            }
+                td.style.fontSize = `${Math.floor(Math.random() * 100 + 15)}pt`;
+            } 
         }
         function randColor() {
             let r = Math.floor(Math.random() * 256);
